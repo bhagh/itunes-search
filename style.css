@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    padding: 10px;
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+} 
+
+.container-audio {
+    width: 66%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+
+
+audio {
+    width:100%;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header {
+    order: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    order: 2;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.10);
+    border: none;
+    margin: 10px auto;
+    outline: none;
+    transition:background-color 0.5s ease;   
+}
+
+.search-buttons{
+    display: flex;
+    justify-content: center;
+    order: 3;
+    margin: 0 10px 0 10px;
+}
+
+.search-buttons label{
+    align-content: center;
+    margin: 0 10px 0 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    order: 3;
+  }
+  
+button {
+      height: 40px;
+      border-radius: 25px;
+      width: 80px;
+      margin: 10px auto;
+      text-align: center;
+      font-size: 18px;
+  }
+
+.songs {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    order: 3;
+}
+
+.flex-results {
+    display: flex;
+    outline: 5px dotted green;
+    padding: 10px;
+    justify-content: center;
+    order: 3;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; 
+}
+
+.card {
+      display: inline-block;
+      padding: 30px;
+      text-align: center;
+      height: 500px;
+      width: 500px;
+
+      flex: auto;
+      white-space:normal;  
+ }
+ .wrapping{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+ }
+
+ img{
+     padding: 20px;
+ }
+ 

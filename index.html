@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+    
+        <form>
+            <h1 class="header">iTunes Search</h1>
+            <input name="search" class="search-box" id="search-name">
+
+
+            <div class="search-buttons">
+
+                <input type="radio" id="all" class="search-type" 
+                    name="search-type" value="" checked="checked">
+                <label for="search-artist">All</label>
+            
+                <input type="radio" id="artist" class="search-type" 
+                    name="search-type" value="&attribute=artistTerm">
+                <label for="search-artist">Artist</label>
+            
+                <input type="radio" id="song" class="search-type" 
+                    name="search-type" value="&attribute=songTerm">
+                <label for="search-song">Song</label>
+            
+                <input type="radio" id="album" class="search-type" 
+                    name="search-type" value="&attribute=albumTerm">
+                <label for="search-album">Album</label>
+
+            </div>
+
+            <div class="button-container">
+                <button type="submit" id="search">Search</button>
+            </div>
+        </form>
+
+        <div class="container-audio" id="media-player">
+            <audio id="mediaplayer"
+                controls
+                autoplay
+                src="">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </div>
+
+          
+        
+    </div>
+    
+    
+     <div class="scrolling-wrapper" id="song-list">
+         <!-- the magic happens here -->
+     </div>
+
+
+</body>
+</html>
